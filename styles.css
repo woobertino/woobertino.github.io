@@ -1,0 +1,247 @@
+* {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    background-color: #141414;
+
+    /* background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------Nav Bar Styles------- */
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.right-side {
+    display: flex;
+}
+
+.nav-link-wrapper {
+    margin-left: 20px;
+}
+
+.nav-link-wrapper a, .nav-link-wrapper .fa:hover {
+    color: #fff;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover, .nav-link-wrapper .fa:hover {
+    color: #999;
+}
+
+/* .active-nav-link, .active-nav-link a {
+    color: #999;
+    border-bottom: 1px solid #999;
+} */
+
+/* ----General Section Styles---- */
+
+.section-wrapper {
+    padding: 68px 34px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.section-title {
+    text-transform: lowercase;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.section-content {
+    padding: 17px;
+}
+
+.section-content p {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* --------Home Styles------ */
+#background-image {
+    width: 100%;
+}
+
+.home {
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+.text-overlay-wrapper, .grid-overlay-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-title {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.overlay-1 {
+    font-size: 2em;
+}
+
+/* --------Recent Bites Styles--------- */
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-item {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+
+.grid-item img {
+    transition: opacity 0.5s;
+}
+
+.grid-item .text-overlay-wrapper h2, .grid-item .text-overlay-wrapper h4 {
+    text-transform: lowercase;
+    color: transparent;
+    transition: color 0.5s;
+}
+
+.grid-item:hover .text-overlay-wrapper h2, .grid-item:hover .text-overlay-wrapper h4 {
+    color: #fff;
+    opacity: initial;
+}
+
+.grid-item:hover img{
+    opacity: 0.5;
+}
+
+.grid-item img{
+    display: block;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-item .vertical{
+    display: block;
+    width: 300px;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* --------Footer Styles---------- */
+footer {
+    padding: 64px 32px 0 32px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-content {
+    padding-top: 15px;
+}
+
+.contact-icons-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons {
+    margin: 0 20px;
+}
+
+.contact-icons a{
+    text-decoration: none;
+}
+
+footer .fa-envelope, footer .fa-instagram {
+    padding-right: 10px;
+}
+
+.copyright-wrapper {
+    font-size: 0.7em;
+}
+
+/* ----------Post Pages---------- */
+.restaurant-title {
+    font-size: 2em;
+    
+}
+
+.restaurant-title h1 {
+    font-family: 'Economica', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.restaurant-contact-icon-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.restaurant-contact-icon {
+    padding: 10px;
+    transition: opacity 0.5s;
+    font-size: 1.5em;
+}
+
+.restaurant-contact-icon:hover {
+    opacity: 0.5;
+}
+
+
+
+/* ----- Post Picture----- */
+.post-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.post-images img {
+    height: 310px;
+    width: 310px;
+    padding: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-images-large img {
+    width: 100%;
+}
